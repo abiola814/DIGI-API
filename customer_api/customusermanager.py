@@ -1,7 +1,7 @@
-from django.contrib.auth.models import CustomUserManager as BaseUserManager
+from django.contrib.auth.models import UserManager as BaseUserManager
 
 
-class CustomUserManager(BaseUserManager):
+class UserManager(BaseUserManager):
     use_in_migrations = True
 
     def _create_user(self, email, password, **extra_fields):

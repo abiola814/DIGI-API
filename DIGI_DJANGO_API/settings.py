@@ -52,6 +52,9 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'DIGI_DJANGO_API.urls'
 
+#custom user model
+# AUTH_USER_MODEL ="customers.User"
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
